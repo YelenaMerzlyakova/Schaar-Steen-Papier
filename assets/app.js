@@ -2,6 +2,10 @@ let rock = document.getElementById('choice1');
 let paper = document.getElementById('choice2');
 let scissors = document.getElementById('choice3');
 var myChoice;
+let computer = document.getElementById('computerGamble');
+let computerChoice = Math.random();
+let reset = document.getElementById('reset');
+
 
 rock.addEventListener("click", function () {
     myChoice = "rock";
@@ -20,9 +24,6 @@ scissors.addEventListener("click", function () {
 
 
 
-let computer = document.getElementById('computerGamble');
-let computerChoice = Math.random();
-
 computer.addEventListener("click", function () {
     let computerChoice = Math.random();
     if (computerChoice < 0.33) {
@@ -36,45 +37,31 @@ computer.addEventListener("click", function () {
     }
 
     document.getElementById('result').innerHTML = compare(computerChoice);
-    console.log("Computer choses " + computerChoice);
 });
 
-
-// /*let result = document.getElementById('result');*/
-
-// let player = document.getElementById('letsPlay');
-// player.addEventListener("click", function () {
-//     compare();
-// });
 function compare(computerChoice) {
-    
     if (myChoice === computerChoice) {
         
-        return "It's a draw!" + " " + "Lets play again." ;
-        console.log('a');
+        return "It's a draw!" + " " + "Wanna play again?" ;
     }
     
     else if (myChoice === "rock") {
         
         if (computerChoice === "scissors") {
-            return "Rock wins" + "<br>" + "You win!";
-            console.log('b');
+            return "Rock wins..." + "<br>" + "you win!";
         }
         else {
-            return "Paper wins" + "<br>" + "You lose!";
-            console.log('c');
+            return "Paper wins..." + "<br>" + "you lose!";
         }
     }
     
     else if (myChoice === "paper") {
         
         if (computerChoice === "rock") {
-            return "Paper wins" + "<br>" + "You win!";
-            console.log('d');
+            return "Paper wins..." + "<br>" + "you win!";
         }
         else {
-            return "Scissors win" + "<br>" + "You lose!";
-            console.log('e');
+            return "Scissors win..." + "<br>" + "you lose!";
         }
             
     }
@@ -82,16 +69,18 @@ function compare(computerChoice) {
     else if (myChoice === "scissors") {
         
         if (computerChoice === "rock") {
-            return "Rock wins" + "<br>" + "You lose!";
-            console.log('f');
+            return "Rock wins..." + "<br>" + "you lose!";
         }
         else {
-            return "Scissors win" + "<br>" + "You win!";
-            console.log('g');
+            return "Scissors win..." + "<br>" + "you win!";
         }
-        console.log('a')
     }
     
     
     } 
    document.write(compare(myChoice,computerChoice));
+
+
+   reset.addEventListener("click", function () {
+    document.getElementById('result').innerHTML = "";
+});

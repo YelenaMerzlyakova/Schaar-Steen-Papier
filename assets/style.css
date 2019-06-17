@@ -2,6 +2,7 @@
     margin: 0 auto;
     padding: 0;
     box-sizing: border-box;
+    text-align: center;
   }
   
   header {
@@ -9,14 +10,49 @@
     background: white;
     text-align: center;
     vertical-align: middle;
+    display: inline-block;
+  }
+
+  h1 {
+    text-align: center;
+    font-weight: bold;
+    font-size: 40px;
+    display: inline-block;
+    vertical-align: middle;
+    padding-top: 25px;
+  }
+
+
+  h2 {
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+    display: inline-block;
+    vertical-align: middle;
+    padding-top: 30px;
   }
   .game {
     height: 100vh;
     background-color: rgb(39, 41, 68);
     font-family: sans-serif;
   }
+
+  .result {
+    padding-top: 30px;
+  }
+
+
+  #result {
+    height: 100px;
+    text-align: center;
+    vertical-align: middle;
+    color: #990015;
+    font-size: 30px;
+    font-weight: bold;
+  }
   
   .options {
+    padding-top: 30px;
     align-content: center;
     display: flex;
   }
@@ -24,12 +60,9 @@
   .computer, .restart {
     margin: 0 auto;
     padding: 0;
-    box-sizing: border-box;
-    display: flex;
   }
   
   button {
-    display: inline;
     width: 200px;
     height: 200px;
     cursor: pointer;
@@ -38,8 +71,8 @@
     font-size: 30px;
     color: white;
     font-weight: bold;
-    border: 4px solid white;
-  } 
-  
+    text-align: center;
+  }
+
 
 
