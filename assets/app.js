@@ -1,40 +1,30 @@
 let rock = document.getElementById('choice1');
 let paper = document.getElementById('choice2');
 let scissors = document.getElementById('choice3');
-let myChoice;
+var myChoice;
 
 rock.addEventListener("click", function () {
-    gamble(rock);
+    myChoice = "rock";
+    console.log(myChoice);
 });
 
 paper.addEventListener("click", function () {
-    gamble(paper);
+    myChoice = "paper";
+    console.log(myChoice);
 });
 
 scissors.addEventListener("click", function () {
-    gamble(scissors);
+    myChoice = "scissors";
+    console.log(myChoice);
 });
 
-let playerChoice = gamble();
 
-function gamble(choice) {
-    if (choice == rock) {
-        myChoice = "rock";
-    }
-    else if (choice == paper) {
-        myChoice = "paper";
-    }
-    else {
-        myChoice = "scissors";
-    }
-    console.log(myChoice);
-}
 
 let computer = document.getElementById('computerGamble');
 let computerChoice = Math.random();
 
 computer.addEventListener("click", function () {
-    var computerChoice = Math.random();
+    let computerChoice = Math.random();
     if (computerChoice < 0.34) {
         computerChoice = "rock";
     }
@@ -56,7 +46,7 @@ computer.addEventListener("click", function () {
 // player.addEventListener("click", function () {
 //     compare();
 // });
-function compare() {
+function compare(computerChoice) {
     
     if (myChoice === computerChoice) {
         
