@@ -25,17 +25,17 @@ let computerChoice = Math.random();
 
 computer.addEventListener("click", function () {
     let computerChoice = Math.random();
-    if (computerChoice < 0.34) {
+    if (computerChoice < 0.33) {
         computerChoice = "rock";
     }
-    else if (computerChoice <= 0.67) {
+    else if (computerChoice <= 0.66) {
         computerChoice = "paper";
     }
     else {
         computerChoice = "scissors";
     }
 
-    compare(computerChoice);
+    document.getElementById('result').innerHTML = compare(computerChoice);
     console.log("Computer choses " + computerChoice);
 });
 
@@ -82,11 +82,11 @@ function compare(computerChoice) {
     else if (myChoice === "scissors") {
         
         if (computerChoice === "rock") {
-            return "rock wins" + "<br>" + "You lose!";
+            return "Rock wins" + "<br>" + "You lose!";
             console.log('f');
         }
         else {
-            return "scissors win" + "<br>" + "You win!";
+            return "Scissors win" + "<br>" + "You win!";
             console.log('g');
         }
         console.log('a')
