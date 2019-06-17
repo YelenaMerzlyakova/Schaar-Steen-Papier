@@ -24,6 +24,13 @@
   .intro h1 {
     font-size: 50px;
   }
+
+  .computer {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    align-items: flex-start;
+  }
   
   button {
     width: 200px;
