@@ -41,7 +41,6 @@ computer.addEventListener("click", function () {
 
 function compare(computerChoice) {
     if (myChoice === computerChoice) {
-        
         return "It's a draw!" + " " + "Wanna play again?" ;
     }
     
@@ -78,9 +77,8 @@ function compare(computerChoice) {
     
     
     } 
-   document.write(compare(myChoice,computerChoice));
 
 
-   reset.addEventListener("click", function () {
+reset.addEventListener("click", function () {
     document.getElementById('result').innerHTML = "";
 });

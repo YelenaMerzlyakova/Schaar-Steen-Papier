@@ -1,3 +1,5 @@
+html
+
 * {
     margin: 0 auto;
     padding: 0;
@@ -29,16 +31,15 @@
     font-size: 30px;
     display: inline-block;
     vertical-align: middle;
-    padding-top: 30px;
+    padding-top: 10px;
   }
   .game {
-    height: 100vh;
     background-color: rgb(39, 41, 68);
     font-family: sans-serif;
   }
 
   .result {
-    padding-top: 30px;
+    padding-top: 20px;
   }
 
 
@@ -52,7 +53,7 @@
   }
   
   .options {
-    padding-top: 30px;
+    padding-top: 20px;
     align-content: center;
     display: flex;
   }
