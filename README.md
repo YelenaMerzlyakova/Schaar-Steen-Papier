@@ -18,7 +18,7 @@ Make a schaar steen papier.
 
 **[Wanna play?](https://yelenamerzlyakova.github.io/Schaar-Steen-Papier/)**
 
-![]()
+![rock](https://github.com/YelenaMerzlyakova/Schaar-Steen-Papier/blob/master/rockpaper.png)
 
 
 ### Code
