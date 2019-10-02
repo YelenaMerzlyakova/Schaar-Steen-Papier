@@ -16,6 +16,13 @@ Make a schaar steen papier.
 
 ### Result 
 
+**[Wanna play?](https://yelenamerzlyakova.github.io/Schaar-Steen-Papier/)**
+
+![]()
+
+
+### Code
+
 ### Features that can still be implemented
 
 - Nice graphics
