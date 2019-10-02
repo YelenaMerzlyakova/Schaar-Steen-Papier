@@ -23,11 +23,46 @@ Make a schaar steen papier.
 
 ### Code
 
-### Features that can still be implemented
+Here is the code that I used to decide who wins. It compares the choice of the player and the computer choice and decided on the winnar.
 
-- Nice graphics
-- Let the player input using a text field
-- Show what the player picked by highlighting the correct button
-- Add more options (spock, ...)
-- Add even more options (but avoid using 100 if statements)
-- Add complex rules
+``` Javascript
+function compare(computerChoice) {
+    if (myChoice === computerChoice) {
+        return "It's a draw!" + " " + "Wanna play again?" ;
+    }
+    
+    else if (myChoice === "rock") {
+        
+        if (computerChoice === "scissors") {
+            return "Rock wins..." + "<br>" + "you win!";
+        }
+        else {
+            return "Paper wins..." + "<br>" + "you lose!";
+        }
+    }
+    
+    else if (myChoice === "paper") {
+        
+        if (computerChoice === "rock") {
+            return "Paper wins..." + "<br>" + "you win!";
+        }
+        else {
+            return "Scissors win..." + "<br>" + "you lose!";
+        }
+            
+    }
+    
+    else if (myChoice === "scissors") {
+        
+        if (computerChoice === "rock") {
+            return "Rock wins..." + "<br>" + "you lose!";
+        }
+        else {
+            return "Scissors win..." + "<br>" + "you win!";
+        }
+    }
+    
+    
+    } ´´´
+    
+    
