@@ -1,11 +1,10 @@
 # Schaar-Steen-Papier
 
 ## Learning objectives
-- generate random 
-- if statements
+- generate if statements
 
 ## The Mission
-Make a schaar steen papier.
+Create a Paper–rock–scissors game. :scissors:
 
 ### Must-have features
 - Have three buttons that the player can press to change their pick
